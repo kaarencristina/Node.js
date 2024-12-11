@@ -1,0 +1,13 @@
+{
+  "name": "supporttickets",
+  "version": "1.0.0",
+  "description": "api de gerenciamento de tickets pra suporte",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js"
+  },
+  
+  "author": "karen",
+  "license": "ISC"
+}
