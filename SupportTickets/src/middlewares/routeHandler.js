@@ -1,4 +1,4 @@
-import {routes} from "../routes.js"
+import {routes} from "../routes/index.js"
 
 
 
@@ -8,8 +8,8 @@ export function routeHandler(request,response){
     })
 
     if (route){
-        return route.controller(request,response)
+        return route.controller({request,response})
     }
-    return response.whiteHear(404).end("not found")
+    return response.whiteHear(404).end()
 
 }
